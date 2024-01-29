@@ -18,20 +18,13 @@ import { useContext } from "react"
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
-  
-
-
-    
-    
-
-
     return (
       <ThemeProvider>
         <CountryProvider>
           <FilterProvider>
         <Navbar/>
         <Routes>
-            <Route path="/country-apis" element={<Countries/>}/>
+            <Route path="/country-apiss" element={<Countries/>}/>
             <Route path='/country' element={<Country/>}/>
             <Route path="*" element={<NoMatch/>}/>
         </Routes>
