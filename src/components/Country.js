@@ -49,10 +49,22 @@ function Country(props) {
         <h5><span style={style2}>Capital: </span>{country.capital}</h5>
       </div>
       <div className='oo'>
-        <h5><span style={style2}>Top Level Domain: </span>{country.domain}</h5>
-        <h5 className='lang'><span style={style2}>Languages:</span> &nbsp; {country.Languages ? country.Languages.join(', ') : "None"}</h5>
-        <h5 className='curr'><span style={style2}>Currency: </span>&nbsp; {country.currencies ? country.currencies.join(', ') : "None"}</h5>
-      </div>
+  <h5><span style={style2}>Top Level Domain: </span>{country.domain}</h5>
+  <h5 className='lang'>
+    <span style={style2}>Languages:</span> &nbsp;
+    {country.languages ? (country.languages.map(lang => lang.name).join(', ') || country.languages.join(', ')) : "None"}
+</h5>
+
+
+<h5 className='curr'>
+    <span style={style2}>Currency: </span>&nbsp;
+    {country.currencies ? (country.currencies.map(curr => curr.name).join(', ') || country.currencies.join(', ')) : "None"}
+
+</h5>
+
+
+</div>
+
       
     </div>
   );

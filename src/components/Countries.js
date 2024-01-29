@@ -7,6 +7,9 @@ import "./style.css";
 import { useNavigate } from "react-router-dom";
 import Input from './Input';
 import { FilterContext } from './FilterProvider';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 export function Countries(props) {
     const { theme, setTheme } = useContext(ThemeContext);
     const { country, setCountry } = useContext(CountryContext);
@@ -42,14 +45,14 @@ export function Countries(props) {
             subregion: items.subregion,
             capital: items.capital,
             domain: items.topLevelDomain,
-            currencies: items.currencies && items.currencies.map(currency => currency.name),
-            Languages: items.languages ? items.languages.map(language => language.name) : [],
-            border: items.borders && items.borders.map(border => border),
+            currencies: items.currencies ? items.currencies.map(currency => currency.name) : [], // Access currency name
+            languages: items.languages ? items.languages.map(language => language.name) : [], // Access language name
+            border: items.borders || [], // Ensure it's an array
             flag: items.flags.png
-        })
-        navigate("/country")
-        console.log(country)
+        });
+        navigate("/country");
     }
+    
     
     const filtercountriesList = data.map((items) => {
         

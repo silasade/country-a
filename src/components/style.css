@@ -31,9 +31,54 @@ body{
     
     
 }
+.my-autosuggest-container {
+  position: relative; /* Ensure relative positioning */
+}
 
+.my-suggestions-container {
+  position: absolute; /* Position suggestions absolutely */
+  z-index: 9999; /* Set a high z-index to ensure it appears on top */
+  width: 90%; /* Adjust width as needed */
+  background-color: black; /* Set background color */
+  border: 1px solid #ccc; /* Add border for visibility */
+  border-radius: 4px; /* Add border radius for rounded corners */
+}
+
+.my-suggestions-list {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  max-height: 200px; /* Set max height to enable scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.my-suggestion {
+  padding: 8px 16px; /* Add padding to suggestions for better readability */
+  cursor: pointer; /* Add pointer cursor for hover effect */
+}
+
+/* Adjust other styles as needed */
+
+.my-suggestions-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  margin: 2px;
+  z-index: -100;
+}
+.my-suggestion{
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+  width: 200%;
+}
 .may{
     width: 400PX;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
 }
 .back{
     
@@ -45,7 +90,7 @@ body{
 }
 input{
     width: 120.33%;
-    padding: 5%;
+    padding: 10%;
     outline: 0;
     border: 0;
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
@@ -87,7 +132,7 @@ input{
         margin-bottom: 1%;
         align-content: space-evenly;
         gap: 50px;
-        padding: 0%;
+        padding: 5%;
     }
 
     
@@ -103,12 +148,13 @@ input{
         
       }
       input{
-        
+        padding: 2%;
         width: 100%;
         
       }
       .dropdown{
         width: 100% !important;
+        
         padding-bottom: 2% !important;
       }
       .nn{
@@ -119,6 +165,9 @@ input{
         padding: 5%;
         padding-right: 5%;
         padding-bottom: 4;
+      }
+      .item{
+        padding: 5% !important;
       }
       .may{
         width:100%

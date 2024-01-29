@@ -13,9 +13,10 @@ import { FilterProvider } from './components/FilterProvider';
 import { CountryProvider } from './components/CountryProvider';
 import Navbar from './components/Navbar';
 import NoMatch from './components/NoMatch';
-
+import { lazy } from 'react';
 import { useContext } from "react"
 import { Route, Routes } from 'react-router-dom';
+
 function App() {
   
 
