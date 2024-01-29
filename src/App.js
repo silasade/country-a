@@ -24,7 +24,7 @@ function App() {
           <FilterProvider>
         <Navbar/>
         <Routes>
-            <Route path="/country-ap" element={<Countries/>}/>
+            <Route path="/country-a" element={<Countries/>}/>
             <Route path='/country' element={<Country/>}/>
             <Route path="*" element={<NoMatch/>}/>
         </Routes>
