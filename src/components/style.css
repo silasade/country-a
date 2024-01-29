@@ -33,6 +33,7 @@ body{
 }
 .my-autosuggest-container {
   position: relative; /* Ensure relative positioning */
+  z-index: 10;
 }
 
 .my-suggestions-container {
@@ -40,7 +41,7 @@ body{
   z-index: 9999; /* Set a high z-index to ensure it appears on top */
   width: 90%; /* Adjust width as needed */
   background-color: black; /* Set background color */
-  border: 1px solid #ccc; /* Add border for visibility */
+   /* Add border for visibility */
   border-radius: 4px; /* Add border radius for rounded corners */
 }
 
@@ -53,6 +54,7 @@ body{
 }
 
 .my-suggestion {
+  
   padding: 8px 16px; /* Add padding to suggestions for better readability */
   cursor: pointer; /* Add pointer cursor for hover effect */
 }
