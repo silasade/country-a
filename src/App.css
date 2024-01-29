@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+/* Your CSS styles */
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.butt{
+  padding: 5%;
+}
+header{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+header{
+
+  padding: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  
+  
+}
+.main{
+  padding: 5% !important;
+}
+.theme{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  
+  align-items: center;
+}
+
+.ma{
+  border-radius: 3%;
+}
+
+.wi{
+  padding: 1%;
+  padding-left: 5%;
+}
+
+.main1{
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.mage{
+  width: 100%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  height: 150px;
+  cursor: pointer;
+}
+.mage:hover{
+  opacity: 75%;
+}
+.ma{
+  flex: 15%;
+  margin-bottom: 2%;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+  
+}
+.mo{
+  width: 20%;
+}
+.App{
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1000px) {
+  
+  .ma{
+    flex: 35%;
+   
+  }
+
+  .mage{
+    height: 75%;
+  }
+ 
+}
+@media (max-width: 400px) {
+  .wi{
+    padding: 3% !important;
+  }
+  .mage{
+    height: 50%;
+  }
+  .ma{
+    flex: 50%;
+    margin-bottom: 2% !important;
+  }
+
+  .main1{
+    gap: 20px !important;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+ 
+}
